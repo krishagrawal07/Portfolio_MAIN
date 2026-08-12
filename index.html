@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krish Agrawal — Engineer, Builder, Explorer</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio of Krish Agrawal — 2nd year B.Tech CSE AI/ML student at GLA University. Building data pipelines, ML models, and beautiful interfaces.">
+  <meta name="keywords" content="Krish Agrawal, CSE Student, B.Tech, AI/ML, GLA University, Portfolio, Data Engineering">
+  <meta name="author" content="Krish Agrawal">
+  <meta property="og:title" content="Krish Agrawal — Engineer, Builder, Explorer">
+  <meta property="og:description" content="Explore portfolio projects, skills, and interactive algorithms by Krish Agrawal.">
+  <meta property="og:image" content="my photo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- 3D Background Scene -->
+  <div id="bg-3d"></div>
+
+  <!-- ─── NAVIGATION ─── -->
+  <header>
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span>krish</span><span>.dev()</span>
+      </a>
+      <nav>
+        <ul id="nav-list">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#simulator">Pipeline</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section id="home">
+    <div class="container hero-wrapper">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Currently building & learning</p>
+        <h1 class="hero-title">
+          I'm <span class="name-highlight">Krish<br>Agrawal</span>
+        </h1>
+
+        <div class="typing-container">
+          <span id="typewriter-text"></span><span class="cursor"></span>
+        </div>
+
+        <p class="hero-description">
+          2nd-year B.Tech CSE AI/ML student at GLA University. I design data pipelines that handle millions of events, build ML models that predict the future, and craft interfaces that feel alive.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Let's Talk</a>
+          <a href="Krish_Agrawal_Resume.pdf" target="_blank" class="btn btn-ghost"><i class="fa-solid fa-arrow-down"></i> Resume</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring avatar-ring-1"></div>
+          <div class="avatar-ring avatar-ring-2"></div>
+          <div class="avatar-container">
+            <img src="my photo.png" alt="Krish Agrawal">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terminal -->
+    <div class="container terminal-wrapper">
+      <div class="terminal-header">
+        <div class="terminal-buttons">
+          <span class="t-btn t-btn-red"></span>
+          <span class="t-btn t-btn-yellow"></span>
+          <span class="t-btn t-btn-green"></span>
+        </div>
+        <div class="terminal-title">guest@krish ~ </div>
+        <div class="terminal-buttons" style="opacity:0"><span class="t-btn"></span></div>
+      </div>
+      <div class="terminal-body">
+        <div id="terminal-output" class="terminal-output"></div>
+        <div class="terminal-input-line">
+          <span class="prompt">❯</span>
+          <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" placeholder="type 'help' to explore...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about" class="container">
+    <div class="section-header" data-reveal>
+      <span class="section-label">01 — About</span>
+      <h2 class="section-title">Building systems<br>that matter.</h2>
+      <p class="section-subtitle">
+        I'm a 2nd year engineer who loves turning complex problems into elegant, performant software.
+      </p>
+    </div>
+
+    <div class="about-bento-grid" data-reveal-stagger>
+      <div class="card bento-card bio-card">
+        <div class="card-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+        <h3 class="card-title">Who I Am</h3>
+        <p class="about-text">
+          Currently pursuing <strong>B.Tech in CSE (AI/ML)</strong> at GLA University. I build full-stack data systems — from ingesting raw event streams to serving cached API responses in under 10ms.
+        </p>
+        <p class="about-text">
+          I think in architectures: how Kafka brokers connect to Spark windows, how dbt transforms feed dashboards, and how FastAPI endpoints serve predictions from trained models.
+        </p>
+      </div>
+
+      <div class="card bento-card edu-card">
+        <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3 class="edu-title">B.Tech — CSE (AI/ML)</h3>
+        <p class="edu-org">GLA University, Mathura</p>
+        <p class="about-text">
+          Deep focus on DSA, Object-Oriented Design, Database Architecture, and ML foundations.
+        </p>
+        <div class="edu-meta">
+          <span><i class="fa-solid fa-star"></i> CGPA: 8.4 / 10</span>
+        </div>
+      </div>
+
+      <div class="card bento-card stats-card">
+        <div class="stat-item">
+          <span class="stat-number">8.4</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">2nd</span>
+          <span class="stat-label">Year</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">AI/ML</span>
+          <span class="stat-label">Specialization</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills" class="container">
+    <div class="section-header" data-reveal>
+      <span class="section-label">02 — Skills</span>
+      <h2 class="section-title">Technical toolkit.</h2>
+      <p class="section-subtitle">
+        The languages, frameworks, and tools I use to bring ideas to production.
+      </p>
+    </div>
+
+    <div class="skills-grid" data-reveal-stagger>
+      <div class="card skill-category">
+        <h3><i class="fa-solid fa-code"></i> Languages</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">Go</span>
+          <span class="skill-pill">Java</span>
+        </div>
+      </div>
+      <div class="card skill-category">
+        <h3><i class="fa-solid fa-gears"></i> Data Engineering</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">Apache Spark</span>
+          <span class="skill-pill">Apache Kafka</span>
+          <span class="skill-pill">Apache Airflow</span>
+          <span class="skill-pill">dbt</span>
+          <span class="skill-pill">ETL/ELT Pipelines</span>
+        </div>
+      </div>
+      <div class="card skill-category">
+        <h3><i class="fa-solid fa-database"></i> Databases</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">PostgreSQL</span>
+          <span class="skill-pill">Snowflake</span>
+          <span class="skill-pill">Redis</span>
+          <span class="skill-pill">MongoDB</span>
+        </div>
+      </div>
+      <div class="card skill-category">
+        <h3><i class="fa-solid fa-server"></i> Backend & APIs</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">REST API Design</span>
+          <span class="skill-pill">Pydantic</span>
+          <span class="skill-pill">pytest</span>
+        </div>
+      </div>
+      <div class="card skill-category">
+        <h3><i class="fa-solid fa-cloud-arrow-up"></i> Cloud & DevOps</h3>
+        <div class="skill-pills">
+          <span class="skill-pill">AWS</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">Kubernetes</span>
+          <span class="skill-pill">Terraform</span>
+          <span class="skill-pill">CI/CD</span>
+          <span class="skill-pill">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PIPELINE SIMULATOR ─── -->
+  <section id="simulator" class="container">
+    <div class="section-header centered" data-reveal>
+      <span class="section-label">03 — Interactive</span>
+      <h2 class="section-title">Data Pipeline Simulator</h2>
+      <p class="section-subtitle">
+        Watch events flow through a real-time ingestion pipeline — from raw clickstream to cached API responses.
+      </p>
+    </div>
+
+    <div class="card pipeline-board" id="pipeline-board" data-reveal>
+      <svg class="pipeline-svg-connector">
+        <path class="connector-bg-path" d=""></path>
+        <path class="connector-laser-path" d="" id="laser-path"></path>
+      </svg>
+
+      <div class="pipeline-nodes">
+        <div class="node" id="sim-source">
+          <div class="node-icon"><i class="fa-solid fa-file-code"></i></div>
+          <div class="node-title">Clickstream</div>
+          <div class="node-subtitle">JSON Source</div>
+        </div>
+        <div class="node" id="sim-kafka">
+          <div class="node-icon"><i class="fa-brands fa-buffer"></i></div>
+          <div class="node-title">Kafka Stream</div>
+          <div class="node-subtitle">Redpanda Queue</div>
+        </div>
+        <div class="node" id="sim-spark">
+          <div class="node-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="node-title">PySpark</div>
+          <div class="node-subtitle">Tumbling Window</div>
+        </div>
+        <div class="node" id="sim-db">
+          <div class="node-icon"><i class="fa-solid fa-database"></i></div>
+          <div class="node-title">PostgreSQL</div>
+          <div class="node-subtitle">Watermarked Sink</div>
+        </div>
+        <div class="node" id="sim-api">
+          <div class="node-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="node-title">FastAPI / Redis</div>
+          <div class="node-subtitle">Cached Service</div>
+        </div>
+      </div>
+
+      <div class="simulator-controls">
+        <button class="sim-btn" id="start-sim-btn">
+          <i class="fa-solid fa-play"></i> Inject Event Packet
+        </button>
+        <div class="pipeline-status" id="pipeline-status">
+          Ready. Click the button to simulate a data pipeline run.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects" class="container">
+    <div class="section-header" data-reveal>
+      <span class="section-label">04 — Work</span>
+      <h2 class="section-title">Selected projects.</h2>
+      <p class="section-subtitle">
+        Real-world applications I've designed, built, and shipped.
+      </p>
+    </div>
+
+    <div class="projects-grid" data-reveal-stagger>
+      <div class="card project-card">
+        <div class="project-header">
+          <span class="project-tag">ML & Finance</span>
+          <div class="project-links">
+            <a href="https://github.com/krishagrawal07/Signal-Stock-Forecast-Desk" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://signal-stock-forecast-desk.vercel.app/" target="_blank" title="Live" style="margin-left:12px;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Signal Stock Forecast Desk</h3>
+        <p class="project-desc">AI-driven prediction platform with real-time stock forecasting and technical financial analysis.</p>
+        <ul class="project-bullets">
+          <li>Predictive ML models for future stock price metrics from historical datasets</li>
+          <li>Interactive charting with technical indicator signals and momentum tracking</li>
+          <li>Deployed on Vercel with CI/CD pipeline integration</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-badge">Python / ML</span>
+          <span class="tech-badge">Financial APIs</span>
+          <span class="tech-badge">Data Vis</span>
+          <span class="tech-badge">Vercel</span>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <div class="project-header">
+          <span class="project-tag">AI & NLP</span>
+          <div class="project-links">
+            <a href="https://github.com/krishagrawal07/resume-parser" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://resume-parser-7dy40ob60-krishagrawal07s-projects.vercel.app/" target="_blank" title="Live" style="margin-left:12px;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">AI Resume Parser</h3>
+        <p class="project-desc">Intelligent document parser extracting structured data fields from candidate resumes using NLP.</p>
+        <ul class="project-bullets">
+          <li>Text mining engines for automatic extraction of names, skills, and education</li>
+          <li>Fast, responsive UI with instant document upload and JSON schema review</li>
+          <li>Transforms unstructured PDF/Word into clean applicant tracking records</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">NLP</span>
+          <span class="tech-badge">PDF Extraction</span>
+          <span class="tech-badge">Vercel</span>
+        </div>
+      </div>
+
+      <div class="card project-card">
+        <div class="project-header">
+          <span class="project-tag">Data Vis</span>
+          <div class="project-links">
+            <a href="https://github.com/krishagrawal07/TRANZIO-SALES-DASHBOARD" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://vercel.com/krishagrawal07s-projects/tranzio-sales-dashboard" target="_blank" title="Deploy" style="margin-left:12px;"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3 class="project-title">Tranzio Sales Dashboard</h3>
+        <p class="project-desc">Interactive analytics dashboard for monitoring business transactions and sales performance metrics.</p>
+        <ul class="project-bullets">
+          <li>Visualizes transaction velocity, product performance, and regional data</li>
+          <li>Dynamic client-side filtering with interactive charting components</li>
+          <li>Hosted on Vercel with seamless repository hooks for dev previews</li>
+        </ul>
+        <div class="project-tech">
+          <span class="tech-badge">React</span>
+          <span class="tech-badge">Chart.js</span>
+          <span class="tech-badge">Responsive UI</span>
+          <span class="tech-badge">Vercel</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact" class="container">
+    <div class="contact-wrapper">
+      <div class="section-header centered" data-reveal>
+        <span class="section-label">05 — Contact</span>
+        <h2 class="section-title">Let's connect.</h2>
+        <p class="section-subtitle">
+          Open for collaborations, learning opportunities, and conversations about tech.
+        </p>
+      </div>
+
+      <div class="contact-cards" data-reveal-stagger>
+        <div class="card contact-card" data-copy="krishagrawal706krish07@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p class="contact-val">krishagrawal706krish07@gmail.com</p>
+          <span class="copy-tooltip">Click to copy</span>
+        </div>
+        <a href="https://github.com/krishagrawal07" target="_blank" class="card contact-card">
+          <i class="fa-brands fa-github"></i>
+          <h3>GitHub</h3>
+          <p class="contact-val">github.com/krishagrawal07</p>
+        </a>
+        <a href="https://linkedin.com/in/krish-agrawal-0309152a8" target="_blank" class="card contact-card">
+          <i class="fa-brands fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          <p class="contact-val">krish-agrawal-0309152a8</p>
+        </a>
+      </div>
+
+      <p class="footer-text">
+        Designed & built by <span>Krish Agrawal</span> &copy; 2026
+      </p>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="js/bg3d.js"></script>
+</body>
+</html>
